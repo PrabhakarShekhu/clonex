@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import logging
 
+from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import Dispatcher, CommandHandler
 
 from utils.callback import callback_delete_message
@@ -18,10 +19,22 @@ def init(dispatcher: Dispatcher):
 
 @restricted
 def start(update, context):
-    rsp = update.message.reply_text('🔺 First, send me a ZIP archive containing the SA files and add /sa to the subject. 🔺\n'
-                                    '📂 After that, use /folders to set and mark/favourite your destination folders. 📂\n'
-                                    '🔗 You are now ready to go! Just forward or send a Google Drive link to clone the File/Folder 🔗 \n.'
-                                    'Bot Developed by Dr.Caduceus & MsGsuite . Follow @TheCaduceus & @MsGsuite on Telegram')
+    rsp = update.message.reply_text('Send me Public drive link I will provide you index link.\n'
+                                    'Access Your link here 👇\n'
+                                    '🔗 https://0.leechzx.workers.dev/0:/AppDrive/ 🔗 \n\n'
+                                    'Bot Developed by @ZX_bots')
+    update.callback_query.message.edit_reply_markup(reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "Source code", url="https://telegram.me/ZX_bots"
+                    ),
+                    InlineKeyboardButton("Project Channel", url="https://telegram.me/ZX_bots"),
+                ],
+                [InlineKeyboardButton("Share", url="https://telegram.me/share/url?url=https://telegram.me/ZX_bots")],
+            ]
+        ))
+
     rsp.done.wait(timeout=60)
     message_id = rsp.result().message_id
     if update.message.chat_id < 0:
