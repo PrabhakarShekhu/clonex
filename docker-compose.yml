@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  clonebot:
+    image: ghcr.io/thecaduceus/clonebot_v2:main
+    container_name: clonebot
+    environment:
+      - CONFIG_FILE_URL=${CONFIG_FILE_URL}
+    ports:
+      - 8080:8080
+    restart: unless-stopped
