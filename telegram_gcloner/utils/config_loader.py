@@ -22,7 +22,7 @@ class _Config:
         self._gclone_para_override = ''
         self._base_path = os.path.dirname(os.path.dirname(__file__))
         self.TIMER_TO_DELETE_MESSAGE = 20
-        self.AD_STRING = ' Goodbye, Please talk to the Bot<a href="{}"> privately.</a>'
+        self.AD_STRING = 'Contact @ZX_bots'
 
     def load_config(self):
         logger.debug('Loading config')
