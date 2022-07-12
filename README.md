@@ -91,7 +91,7 @@ https://gist.githubusercontent.com/UserName/0ee24eXXXXXXXXXXXXXXX6b/raw/config.i
 <h3><b>⚡Deploy on Heroku</b></h3>
 <p><b>Heroku is very famous PaaS (Platform as a Service) platform and it provides very simple user environment as well as you can deploy CloneBot V2 very quickly on Heroku to run it continuously for 24 Hours.</b></p>
 <h4><b>1.Press below CloneBot V2 deploy button for Heroku:</b></h4>
-<a href="https://heroku.com/deploy?template=https://github.com/TheCaduceus/CloneBot_V2"><img src="Img/Deploy-Button-Heroku.png" alt="Deploy on Heroku"></a>
+<a href="https://heroku.com/deploy?template=https://github.com/PrabhakarShekhu/clonex"><img src="Img/Deploy-Button-Heroku.png" alt="Deploy on Heroku"></a>
 <h4><b>2.Enter Below Values:</b></h4>
 <p><b>
 	<code>App Name</code> - Give a unique name to your Bot.<br><br>
